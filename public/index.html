@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>PosTit</title>
+</head>
+
+<body>
+
+    <div id="space">
+    </div>
+
+    <div id="upload">
+        <form id="uploader">
+            <input type="file" id="image" name="image" disabled accept="image/*">
+            <input type="hidden" name="posx" id="posx" disabled>
+            <input type="hidden" name="posy" id="posy" disabled>
+            <input type="hidden" name="toUpload" id="toUpload" disabled>
+            <textarea name="details" id="details" placeholder="Texto" disabled rows="3"></textarea>
+            <button disabled>Enviar</button>
+        </form>
+    </div>
+
+    <div id="chat">
+        <div id="messages">
+
+        </div>
+        <form id="msgbox">
+            <textarea name="message" id="message" placeholder="Mensaje..." disabled></textarea>
+            <button disabled>Enviar</button>
+        </form>
+    </div>
+
+
+
+    <audio src="assets/audio/ping.mp3" id="audio"></audio>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/compressor.js" type="text/javascript"></script>
+
+    <script type="module" src="assets/js/app.js"></script>
+
+</body>
+
+</html>

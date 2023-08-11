@@ -1,0 +1,145 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#space {
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    cursor: crosshair;
+}
+
+#upload {
+    background-color: #CCC;
+    left: 50%;
+    top: 20vh;
+    position: fixed;
+    z-index: 10000;
+    width: 400px;
+    margin-left: -210px;
+    padding: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#upload textarea {
+    resize: none;
+    border: 0;
+    width: calc(100% - 17px);
+    margin: 3px;
+    padding: 5px;
+}
+
+#upload button {
+    width: calc(100% - 7px);
+    margin: 3px;
+    padding: 10px 0px;
+    border: 0;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#chat {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background-color: #EFEFEF;
+}
+
+#chat #messages {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 100%;
+    top: 0px;
+    bottom: 125px;
+    overflow: auto;
+}
+
+#chat #messages .message {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    clear: both;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 7px;
+    margin: 5px 10px;
+}
+
+#chat #messages .message.right {
+    float: right;
+    background-color: #DDD;
+    text-align: right;
+}
+
+#chat #messages .message .data {
+    color: #333;
+    font-size: 16px;
+}
+
+#chat #messages .message .user {
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+}
+
+#chat #msgbox {
+    border-top: 1px solid #CCC;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    height: 120px;
+}
+
+#chat #msgbox textarea {
+    resize: none;
+    border: 0;
+    width: calc(100% - 17px);
+    height: 60px;
+    margin: 3px;
+    padding: 5px;
+}
+
+#chat #msgbox button {
+    width: calc(100% - 7px);
+    margin: 3px;
+    padding: 10px 0px;
+    border: 0;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.posit {
+    position: absolute;
+    background-color: #FCEC7D;
+    left: 10px;
+    top: 10px;
+    width: 166px;
+    height: auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.posit img {
+    width: 160px;
+    height: 80px;
+    object-fit: cover;
+    background-color: transparent;
+    margin: 3px;
+    color: #333;
+}
+
+.posit p {
+    padding: 5px;
+    margin: 0px;
+}

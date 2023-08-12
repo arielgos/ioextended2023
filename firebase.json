@@ -17,9 +17,6 @@
     "hosting": {
       "port": 8080
     },
-    "ui": {
-      "enabled": true
-    },
     "singleProjectMode": true
   }
 }
